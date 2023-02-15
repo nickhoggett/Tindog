@@ -1,0 +1,125 @@
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-img {
+    height: 25px;
+    margin: 20px 20px;
+    
+}
+
+#profile {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.profile-pic {
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 15px;
+    
+}
+
+#status {
+    transform: rotate(-30deg);
+    position: absolute;
+    top: 55;
+    left: 25;
+}
+
+#status img {
+    width: 200px;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    opacity: 0;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes pulse{
+    0%{
+      opacity: 0;
+    }
+    10%{
+      opacity:.50;
+      transform-origin: 50% 50%;
+      transform: rotate(-2deg) scale(5);
+      transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    }
+    100%{
+      opacity:1;
+      transform: rotate(-15deg) scale(1);
+    }
+  }
+  
+.text-details {
+    position: absolute;
+    top: 590;
+    left: 30;
+    text-align: start;
+    color: whitesmoke;
+
+}
+
+p { margin: 8px auto; }
+
+.bold {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    background: #FFFFFF;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    margin: 15px 15px;
+    box-shadow: 0px 10px 20px #E9E9EA;
+}
+
+.button-img {
+    margin: auto auto;
+    height: 25px;
+    width: 25px;
+    pointer-events: none;
+}
+
+#like-button:hover,
+#like-button:focus {
+    background: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
+}
+
+#nope-button:hover,
+#nope-button:focus {
+    background: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+}
+
+.cursor:hover {
+    cursor: pointer;
+}
