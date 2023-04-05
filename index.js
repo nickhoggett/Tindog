@@ -1,4 +1,4 @@
-import { currentDog } from "./Dog.js";
+import { currentDog } from "./dog.js";
 
 
 function renderDog() {
